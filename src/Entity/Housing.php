@@ -39,7 +39,7 @@ class Housing
     private $user;
 
     #[ORM\ManyToOne(targetEntity: Category::class, inversedBy: 'housings')]
-    #[ORM\JoinColumn(nullable: false)]
+    #[ORM\JoinColumn(nullable: true)]
     private $categorie;
 
     public function getId(): ?int
